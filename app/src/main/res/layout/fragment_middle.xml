@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".middleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/middleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/photoBinary"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:onClick="clickPhoto"
+            app:layout_constraintBottom_toTopOf="@id/textPhotoMiddle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_editor_absoluteX="20dp"
+            app:layout_editor_absoluteY="20dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textPhotoMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/infoImage"
+            app:layout_constraintTop_toBottomOf="@+id/photoBinary"
+            app:layout_constraintEnd_toEndOf="@+id/photoBinary"
+            app:layout_constraintStart_toStartOf="@+id/photoBinary"
+            app:layout_constraintBottom_toTopOf="@id/photoPreferences"
+            />
+
+        <ImageButton
+            android:id="@+id/photoPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="clickFavorite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_editor_absoluteX="20dp"
+            app:layout_editor_absoluteY="20dp"
+            app:srcCompat="@drawable/starempty"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
