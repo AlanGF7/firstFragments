@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         sendImage = savedInstanceState?.getBoolean(KEY, true) ?: true
         if (sendImage)
-            supportFragmentManager.beginTransaction().add(R.id.container, MainFragment())
-                .commit()
+            supportFragmentManager.beginTransaction().add(R.id.container, MainFragment()).commit()
     }
 
 

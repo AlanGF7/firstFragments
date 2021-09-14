@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,11 +23,10 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_margin="10dp"
-            android:onClick="clickPhoto"
             app:layout_constraintBottom_toTopOf="@id/textPhotoMiddle"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_editor_absoluteX="20dp"
             app:layout_editor_absoluteY="20dp"
             app:srcCompat="@drawable/logo" />
@@ -39,11 +37,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/infoImage"
-            app:layout_constraintTop_toBottomOf="@+id/photoMiddle"
+            app:layout_constraintBottom_toTopOf="@id/photoPreferences"
             app:layout_constraintEnd_toEndOf="@+id/photoMiddle"
             app:layout_constraintStart_toStartOf="@+id/photoMiddle"
-            app:layout_constraintBottom_toTopOf="@id/photoPreferences"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/photoMiddle" />
 
         <ImageButton
             android:id="@+id/photoPreferences"
@@ -52,28 +49,26 @@
             android:layout_margin="10dp"
             android:onClick="clickFavorite"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
+            app:layout_constraintEnd_toStartOf="@+id/photoHeart"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
             app:layout_editor_absoluteX="20dp"
             app:layout_editor_absoluteY="20dp"
-            app:srcCompat="@drawable/starempty"
-            />
+            app:srcCompat="@drawable/starempty" />
 
         <ImageButton
             android:id="@+id/photoHeart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:onClick="clickFavorite"
+            android:onClick="clickHeart"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/photoPreferences"
+            app:layout_constraintTop_toBottomOf="@id/textPhotoMiddle"
             app:layout_editor_absoluteX="20dp"
             app:layout_editor_absoluteY="20dp"
-            app:srcCompat="@drawable/starempty"
-            />
+            app:srcCompat="@drawable/starempty" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
