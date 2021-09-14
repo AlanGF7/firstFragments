@@ -10,15 +10,16 @@ import android.widget.ImageView
 class detailFragment : Fragment(R.layout.fragment_detail) {
 
     private var source: Int = 0
+    private lateinit var imageSelected: Images
     private lateinit var image: ImageView
 
     override fun onResume() {
         super.onResume()
         //source = intent.getIntExtra("source", R.drawable.purple1)
-        source = requireArguments().getParcelable("Image")?: Images()
+        imageSelected = requireArguments().getParcelable("Image")?: Images()
 
         image = requireView().findViewById(R.id.photoDetail)
-        image.setImageResource(source)
+        image.setImageResource(imageSelected.image)
 
         /*
         source = intent.getIntExtra("source", R.drawable.purple1)
