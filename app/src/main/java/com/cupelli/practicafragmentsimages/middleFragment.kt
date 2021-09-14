@@ -24,13 +24,13 @@ class middleFragment : Fragment(R.layout.fragment_middle)
 
         val photoMiddle : ImageView = view.findViewById<ImageView>(R.id.photoMiddle)
 
-        /*photoMiddle.setOnClickListener{
+        photoMiddle.setOnClickListener{
             (requireActivity() as MainActivity).replaceFragment(detailFragment().apply {
                 arguments = Bundle().apply {
                     putParcelable("Selected Image",ropa[index])
                 }
             })
-        }*/
+        }
 
       /*  imgv_Photo.setOnClickListener{
             (requireActivity() as MainActivity).replaceFragment(ImageInfo().apply {
