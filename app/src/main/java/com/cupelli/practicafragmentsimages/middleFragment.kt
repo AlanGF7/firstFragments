@@ -27,7 +27,7 @@ class middleFragment : Fragment(R.layout.fragment_middle)
         /*photoMiddle.setOnClickListener{
             (requireActivity() as MainActivity).replaceFragment(detailFragment().apply {
                 arguments = Bundle().apply {
-                    putParcelable("Selected Image",)
+                    putParcelable("Selected Image",ropa[index])
                 }
             })
         }*/
