@@ -6,4 +6,17 @@
     <string name="nextButton">Next</string>
     <string name="backButton">Back</string>
     <string name="hello_blank_fragment">Hello world</string>
+
+    <string name="purple1">¿No estaría genial tener una vista así de la luna y el cielo?</string>
+    <string name="piano">Nunca sabremos porqué el piano tiene tanta armonía en sus notas</string>
+    <string name="purple2">A pesar de esas tétricas varas, ¿No da cierta melancolía el paisaje?</string>
+    <string name="cat">Cest du pipi de chat mon ami, est-ce que vous avez écoutez cet expression idiomatique?</string>
+    <string name="purple3">Parecieran las puertas del infierno, tornadas moradas, ¿O era lila?</string>
+    <string name="dog">Es imposible olvidar a los pequeños acompañantes que tenemos en esta gran vida, ¿Cierto?</string>
+    <string name="purple4">Purple purple and just purple. Isnt that combination so perfect?</string>
+    <string name="trading">Trading. Es un mundo muy interesante, no estaría mal echarle un ojo más a menudo</string>
+    <string name="purple5">¿Serán gotas moradas de agua en una hoja? No lo sabremos... Tiene aura misteriosa</string>
+    <string name="violin">To fiddle, to play the violin. Yep, I didnt know that verb too</string>
+
+
 </resources>
