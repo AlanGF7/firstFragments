@@ -12,16 +12,16 @@ import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
-    private val KEY = "STATE_KEY"
-    private var addImageInFragment: Boolean = true
+    private val KEY = "STATE_KEY" //Para instanciar del MainActivity
+    private var sendImage: Boolean = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        addImageInFragment = savedInstanceState?.getBoolean(KEY, true) ?: true
-        if (addImageInFragment)
+        sendImage = savedInstanceState?.getBoolean(KEY, true) ?: true
+        if (sendImage)
             supportFragmentManager.beginTransaction().add(R.id.container, MainFragment())
                 .commit()
     }
